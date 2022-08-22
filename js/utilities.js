@@ -15,6 +15,7 @@ function getIDInnerText(innerTextId) {
 // makeFloat
 function makeFloat(str) {
     const float = parseFloat(parseFloat(str).toFixed(2));
+    // console.log(float);
     return float;
 }
 
@@ -22,5 +23,10 @@ function makeFloat(str) {
 function makeInt(str) {
     const int = parseInt(str);
     return int;
+}
+
+function setTextValue(id, newValue) {
+    const textElementId = document.getElementById(id);
+    textElementId.innerText = newValue;
 }
 
