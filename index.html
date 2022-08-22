@@ -6,43 +6,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fabicon -->
-    <link rel="shortcut icon" href="images/Group 2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/PSG.png" type="image/x-icon">
     <!-- title -->
     <title>Ligue-1_PSG</title>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- custom-css -->
     <style>
         body {
             font-family: Tahoma;
-            overflow: hidden;
         }
 
         .cus_head {
             font-family: cursive;
+        }
+
+        .cus_time {
+            transition-duration: 700ms;
         }
     </style>
 
 </head>
 
 <body class="bg-zinc-900 text-white">
-    <header class="bg-black flex justify-between items-end">
+    <!-- header-banner -->
+    <header class="bg-black flex justify-between items-end h-[85vh]">
 
-        <img class="mb-[-24px]" src="images/Group 12.png" alt="">
+        <div>
+            <img class="mb-[-24px] h-auto" src="images/banner.png" alt="">
+        </div>
 
-        <div class="w-2/4 my-auto">
+        <div class="w-5/12 my-auto">
             <h1 class="text-5xl cus_head text-orange-500 text-center">Select Your Best Five</h1>
-            <img class="ml-auto" src="images/Line Marker.png" alt="">
+            <img class="ml-auto animate-pulse" src="images/Line Marker.png" alt="">
             <p class="text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis
                 enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
 
-        <div class="mr-[-13px]">
-            <img class="ml-[-5em] mb-[-9em]" src="images/Card-psg.png" alt="">
-            <img class="" src="images/football.png" alt="">
+        <div class="pt-10">
+            <img class="mr-16 animate-bounce" src="images/Card-psg.png" alt="">
+            <img class="ml-40" src="images/final-football.png" alt="">
         </div>
     </header>
+
+    <!-- main -->
+    <main class="flex justify-between p-20 gap-14">
+        <!-- cards -->
+        <section class="w-3/4 grid grid-cols-3 gap-10">
+            <!-- player-1 -->
+            <div class="bg-black border-2 border-zinc-700 shadow-lg">
+                <div class="h-2/4">
+                    <img class="w-full h-full hover:animate-pulse" src="images/messi-1.png" alt="">
+                </div>
+
+                <div class="h-2/4 text-center flex flex-col justify-center gap-6 py-4">
+                    <h2 class="text-2xl font-semibold">Lionel Messi</h2>
+                    <div class="flex items-center gap-3 justify-center text-zinc-400">
+                        <p>96 Goals</p>
+                        <span>.</span>
+                        <p>120 Assist</p>
+                    </div>
+                    <button type="button"
+                        class="uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out cus_time">Select</button>
+                </div>
+            </div>
+            <!-- player-2 -->
+            <div class="bg-black border-2 border-zinc-700 shadow-lg">
+                <div class="h-2/4">
+                    <img class="w-full h-full hover:animate-pulse" src="images/neymar-2.png" alt="">
+                </div>
+
+                <div class="h-2/4 text-center flex flex-col justify-center gap-6 py-4">
+                    <h2 class="text-2xl font-semibold">Neymar Jr.</h2>
+                    <div class="flex items-center gap-3 justify-center text-zinc-400">
+                        <p>69 Goals</p>
+                        <span>.</span>
+                        <p>99 Assist</p>
+                    </div>
+                    <button type="button"
+                        class="uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out cus_time">Select</button>
+                </div>
+            </div>
+            <!-- player-3 -->
+            <div class="bg-black border-2 border-zinc-700 shadow-lg">
+                <div class="h-2/4">
+                    <img class="w-full h-full hover:animate-pulse" src="images/mbappe-3.png" alt="">
+                </div>
+
+                <div class="h-2/4 text-center flex flex-col justify-center gap-6 py-4">
+                    <h2 class="text-2xl font-semibold">Kylian Mbappé</h2>
+                    <div class="flex items-center gap-3 justify-center text-zinc-400">
+                        <p>66 Goals</p>
+                        <span>.</span>
+                        <p>90 Assist</p>
+                    </div>
+                    <button type="button"
+                        class="uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out cus_time">Select</button>
+                </div>
+            </div>
+            <!-- player-4 -->
+            <div class="bg-black border-2 border-zinc-700 shadow-lg">
+                <div class="h-2/4">
+                    <img class="w-full h-full hover:animate-pulse" src="images/machade-4.png" alt="">
+                </div>
+
+                <div class="h-2/4 text-center flex flex-col justify-center gap-6 py-4">
+                    <h2 class="text-2xl font-semibold">Vítor Machado</h2>
+                    <div class="flex items-center gap-3 justify-center text-zinc-400">
+                        <p>36 Goals</p>
+                        <span>.</span>
+                        <p>20 Assist</p>
+                    </div>
+                    <button type="button"
+                        class="uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out cus_time">Select</button>
+                </div>
+            </div>
+            <!-- player-5 -->
+            <div class="bg-black border-2 border-zinc-700 shadow-lg">
+                <div class="h-2/4">
+                    <img class="w-full h-full hover:animate-pulse" src="images/ramos-5.png" alt="">
+                </div>
+
+                <div class="h-2/4 text-center flex flex-col justify-center gap-6 py-4">
+                    <h2 class="text-2xl font-semibold">Sergio Ramos</h2>
+                    <div class="flex items-center gap-3 justify-center text-zinc-400">
+                        <p>30 Goals</p>
+                        <span>.</span>
+                        <p>12 Assist</p>
+                    </div>
+                    <button type="button"
+                        class="uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out cus_time">Select</button>
+                </div>
+            </div>
+            <!-- player-6 -->
+            <div class="bg-black border-2 border-zinc-700 shadow-lg">
+                <div class="h-2/4">
+                    <img class="w-full h-full hover:animate-pulse" src="images/sanches-6.png" alt="">
+                </div>
+
+                <div class="h-2/4 text-center flex flex-col justify-center gap-6 py-4">
+                    <h2 class="text-2xl font-semibold">Renato Sanches</h2>
+                    <div class="flex items-center gap-3 justify-center text-zinc-400">
+                        <p>33 Goals</p>
+                        <span>.</span>
+                        <p>30 Assist</p>
+                    </div>
+                    <button type="button"
+                        class="uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out cus_time">Select</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- aside -->
+        <aside class="w-1/4 bg-red-500">
+            <h1>adef</h1>
+        </aside>
+    </main>
 
 </body>
 
