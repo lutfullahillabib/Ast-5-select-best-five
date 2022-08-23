@@ -20,13 +20,21 @@ function makeFloat(str) {
 }
 
 // makeInt
-function makeInt(str) {
-    const int = parseInt(str);
-    return int;
-}
+// function makeInt(str) {
+//     const int = parseInt(str);
+//     return int;
+// }
 
+
+// setTextValue
 function setTextValue(id, newValue) {
     const textElementId = document.getElementById(id);
     textElementId.innerText = newValue;
+}
+
+// setInputValue (should be into Empty)
+function setInputValue(id, empty) {
+    const inputId = document.getElementById(id);
+    inputId.value = empty;
 }
 

@@ -29,8 +29,9 @@
     <header class="bg-black flex justify-between items-end h-[85vh]">
 
         <div>
-            <img class="h-[110px] w-[100px] ml-20 animate-spin" src="images/wc.png" alt="">
-            <img class="mb-[-24px] h-auto animate-pulse" src="images/banner.png" alt="">
+            <img class="h-[110px] w-[100px] ml-2 md:ml-20 mb-24 md:mb-52 lg:mb-0 animate-spin" src="images/wc.png"
+                alt="">
+            <img class="lg:mb-[-24px] md:mb-[-19px] mb-[-8px] h-auto animate-pulse" src="images/banner.png" alt="">
         </div>
 
         <div class="w-5/12 my-auto">
@@ -43,15 +44,15 @@
         </div>
 
         <div class="pt-10">
-            <img class="mr-16 animate-bounce" src="images/Card-psg.png" alt="">
-            <img class="ml-40" src="images/final-football.png" alt="">
+            <img class="mr-16 mb-24 md:mb-44 lg:mb-0 animate-bounce" src="images/Card-psg.png" alt="">
+            <img class="lg:ml-40 md:ml-16" src="images/final-football.png" alt="">
         </div>
     </header>
 
     <!-- main -->
-    <main class="flex justify-between p-20 gap-14">
+    <main class="lg:flex lg:justify-between lg:p-20 p-10 gap-14">
         <!-- cards -->
-        <section class="w-3/4 grid grid-cols-3 gap-10">
+        <section class="lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- player-1 -->
             <div class="bg-black border-2 border-zinc-700 shadow-lg rounded">
                 <div class="h-2/4">
@@ -67,7 +68,10 @@
                     </div>
                     <!-- player-1-btn -->
                     <button onclick="addCart('name1', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
+                    <!-- alter-btn-by-id -->
+                    <!-- <button onclick="addCart('name1', 'test-id-disable')" id="test-id-disable" type="button"
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button> -->
                 </div>
             </div>
             <!-- player-2 -->
@@ -85,7 +89,7 @@
                     </div>
                     <!-- player-2-btn -->
                     <button onclick="addCart('name2', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-3 -->
@@ -103,7 +107,7 @@
                     </div>
                     <!-- player-3-btn -->
                     <button onclick="addCart('name3', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-4 -->
@@ -121,7 +125,7 @@
                     </div>
                     <!-- player-4-btn -->
                     <button onclick="addCart('name4', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-5 -->
@@ -139,7 +143,7 @@
                     </div>
                     <!-- player-5-btn -->
                     <button onclick="addCart('name5', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-6 -->
@@ -157,7 +161,7 @@
                     </div>
                     <!-- player-6-btn -->
                     <button onclick="addCart('name6', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-7 -->
@@ -175,7 +179,7 @@
                     </div>
                     <!-- player-7-btn -->
                     <button onclick="addCart('name7', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-8 -->
@@ -193,7 +197,7 @@
                     </div>
                     <!-- player-8-btn -->
                     <button onclick="addCart('name8', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
             <!-- player-9 -->
@@ -211,29 +215,27 @@
                     </div>
                     <!-- player-9-btn -->
                     <button onclick="addCart('name9', this)" type="button"
-                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700">Select</button>
+                        class="rounded uppercase py-2 mx-10 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:mx-5 hover:ease-in-out duration-700 hover:disabled:bg-red-700">Select</button>
                 </div>
             </div>
-
         </section>
 
         <!-- aside -->
-        <aside class="w-1/4">
+        <aside class="lg:w-1/4 w-fit md:w-auto mx-auto lg:mx-0">
             <!-- 1st-aside -->
-            <div class="bg-black py-6 mb-7 rounded h-96">
+            <div class="bg-black py-6 lg:mb-7 my-7 lg:my-0 rounded h-96">
+                <!-- no height (h) is better -->
 
-                <div class="">
-                    <div class="text-center py-3">
-                        <h2 class="text-2xl font-semibold">Selected - <span id="count">0</span></h2>
-                        <img class="mx-auto animate-pulse" src="images/Ureg-Ureg Marker.png" alt="">
-                    </div>
+                <div class="text-center py-3">
+                    <h2 class="text-2xl font-semibold">Selected - <span id="count">V</span></h2>
+                    <img class="mx-auto animate-pulse" src="images/Ureg-Ureg Marker.png" alt="">
+                </div>
 
-                    <!-- order-list -->
-                    <div>
-                        <!-- ol -->
-                        <ol id="ol" class="list-decimal ml-14">
-                        </ol>
-                    </div>
+                <!-- order-list -->
+                <div>
+                    <!-- ol -->
+                    <ol id="ol" class="list-decimal lg:ml-14 md:ml-48 ml-14 cus_head">
+                    </ol>
                 </div>
             </div>
 
@@ -250,52 +252,52 @@
 
                     <!-- per-player -->
                     <div class="flex justify-between items-center">
-                        <p class="text-zinc-400">Per Player: </p>
-                        <input id="per-player" class="w-2/4 p-2 rounded bg-black border-2 outline-0" type="number"
-                            name="" value="">
+                        <p class="text-zinc-400 pr-10 lg:pr-0">Per Player: </p>
+                        <input id="per-player" class="w-36 p-2 rounded bg-black border-2 outline-0" type="number"
+                            name="" value="" placeholder="Player Amount">
                     </div>
 
                     <!-- cal-btn -->
                     <button onclick="calculate()"
-                        class="my-5 mx-auto block uppercase py-2 px-9 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:px-16 hover:ease-in-out duration-700 rounded"
+                        class="my-5 mx-auto block uppercase py-2 px-9 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:px-16 hover:ease-in-out duration-700 rounded"
                         type="
                         button">Calculate</button>
 
                     <!-- player-expenses -->
                     <div class="mb-4 flex justify-between items-center">
                         <p class="text-zinc-400">Player Expenses = </p>
-                        <p class="text-white">$<span id="player-expenses">0</span></p>
+                        <p class="text-white cus_head text-xl">$<span id="player-expenses"
+                                class="cus_head text-xl">Amount</span></p>
                     </div>
 
                     <!-- manager -->
                     <div class="mb-4 flex justify-between items-center">
-                        <p class="text-zinc-400">Manager: </p>
-                        <input class="w-2/4 p-2 rounded bg-black border-2 outline-0" type="number" name="" value=""
-                            id="manager">
+                        <p class="text-zinc-400 pr-10 lg:pr-0">Manager: </p>
+                        <input class="w-36 p-2 rounded bg-black border-2 outline-0" type="number" name="" value=""
+                            id="manager" placeholder="ManagerAmount">
                     </div>
 
                     <!-- coach -->
                     <div class="flex justify-between items-center">
-                        <p class="text-zinc-400">Coach: </p>
-                        <input class="w-2/4 p-2 rounded bg-black border-2 outline-0" type="number" name="" value=""
-                            id="coach">
+                        <p class="text-zinc-400 pr-10 lg:pr-0">Coach: </p>
+                        <input class="w-36 p-2 rounded bg-black border-2 outline-0" type="number" name="" value=""
+                            id="coach" placeholder="Coach Amount">
                     </div>
 
                     <!-- cal-total-btn -->
                     <button id="calculate-total"
-                        class="my-5 mx-auto block uppercase py-2 px-9 bg-blue-700 hover:bg-green-600 disabled:bg-gray-600 font-medium hover:px-14 hover:ease-in-out duration-700 rounded"
+                        class="my-5 mx-auto block uppercase py-2 px-9 bg-blue-700 hover:bg-green-700 disabled:bg-gray-600 font-medium hover:px-14 hover:ease-in-out duration-700 rounded"
                         type="
                             button">Calculate Total</button>
 
                     <!-- total -->
                     <div class="flex justify-between items-center">
                         <p class="text-zinc-400">Total = </p>
-                        <p class="text-orange-500">$<span id="total">0</span></p>
+                        <p class="text-orange-500 cus_head text-xl">$<span id="total"
+                                class="cus_head text-xl">Amount</span></p>
                     </div>
-
                 </div>
             </div>
-
         </aside>
     </main>
 
@@ -308,7 +310,7 @@
 
     <!-- js-files-script -->
     <script src="js/utilities.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/player.js"></script>
 </body>
 
 </html>
