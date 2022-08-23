@@ -56,6 +56,19 @@ function calculate() {
         // setInputValue("coach", '');
     }
 
+    else if (perPlayerValue == 0) {
+        alert(`Player-Cost => (${perPlayerValue}) Amount can't be Zero`);
+
+        setTextValue("player-expenses", 'Amount');
+
+        setInputValue("per-player", '');
+
+        setTextValue("total", "Amount");
+
+        // setInputValue("manager", '');
+        // setInputValue("coach", '');
+    }
+
     else if (perPlayerValue < 0) {
         alert(`Player-Cost => (${perPlayerValue}) Amount can't be Negative`);
 
@@ -120,6 +133,28 @@ const calculateTotal = document.getElementById("calculate-total").addEventListen
 
         // setInputValue("manager", '');
         // setInputValue("coach", '');
+    }
+
+    else if (managerValue == 0) {
+        alert(`Manager-Cost => (${managerValue}) Amount can't be Zero`);
+
+        setTextValue("total", "Amount");
+
+        setInputValue("per-player", '');
+
+        setInputValue("manager", '');
+        // setInputValue("coach", '');
+    }
+
+    else if (coachValue == 0) {
+        alert(`Coach-Cost => (${coachValue}) Amount can't be Zero`);
+
+        setTextValue("total", "Amount");
+
+        setInputValue("per-player", '');
+
+        // setInputValue("manager", '');
+        setInputValue("coach", '');
     }
 
     else if (managerValue < 0) {
